@@ -1,0 +1,39 @@
+@keyframes glowing {
+    0% { box-shadow: 0 0 10px #7E0CF5; }
+    50% { box-shadow: 0 0 20px #7E0CF5; }
+    100% { box-shadow: 0 0 10px #7E0CF5; }
+  }
+.glow {
+    animation: glowing 5s infinite;
+  }
+
+@keyframes blur {
+    0% { filter: blur(2px); }
+    100% { filter: blur(8px); }
+  }
+
+.blur {
+  animation: blur 3s infinite alternate;
+}
+
+
+@keyframes glowing_event {
+  0% { box-shadow: 0 0 10px #053873; }
+  50% { box-shadow: 0 0 50px #053873; }
+  100% { box-shadow: 0 0 10px #053873; }
+}
+.glowing_event:hover {
+  animation: glowing_event 5s infinite;
+}
+
+.title-soon:hover {
+  transform: translateY(-2px);
+}
+
+.j-letter:hover {
+  transform: translateY(2px);
+}
+
+.ball-to-down:active{
+  transform: translateY(-35px)
+}
